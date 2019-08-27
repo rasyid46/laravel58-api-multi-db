@@ -1,5 +1,5 @@
-# laravel58-api-multi-db
-laravel 5.8 rest api using postgre and mongo
+# laravel58-api-multi-db 
+laravel 5.8 rest api using postgre and mongo <br/>
 
 composer install
 
@@ -9,7 +9,7 @@ php artisan jwt:secret
 - copy .env.example to .env
   cp .env.example .env
 
-set env
+set env <br/>
 
 DB_CONNECTION=mongodb
 DB_HOST=127.0.0.1
