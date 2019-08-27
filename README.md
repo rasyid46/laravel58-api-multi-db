@@ -29,7 +29,9 @@ SWAGGER_VERSION=2.0
 L5_SWAGGER_CONST_HOST=localhost:8000/
 L5_schemes=http
 
-
+-migrate db and seed
+php artisan migrate
+php artisan db:seed
 generate api doc
 
 php artisan  l5-swagger:generate
