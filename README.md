@@ -11,12 +11,12 @@ php artisan jwt:secret
 
 set env <br/>
 
-DB_CONNECTION=mongodb
-DB_HOST=127.0.0.1
-DB_PORT=27017
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+DB_CONNECTION=mongodb <br/>
+DB_HOST=127.0.0.1 <br/>
+DB_PORT=27017 <br/>
+DB_DATABASE= <br/>
+DB_USERNAME= <br/>
+DB_PASSWORD= <br/>
 
 DB_CONNECTION_SECOND=pgsql
 DB_HOST_SECOND=127.0.0.1
