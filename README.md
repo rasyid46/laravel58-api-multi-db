@@ -30,11 +30,12 @@ L5_SWAGGER_CONST_HOST=localhost:8000/
 L5_schemes=http
 
 -migrate db and seed
-php artisan migrate
-php artisan db:seed
-generate api doc
+    php artisan migrate
+    php artisan db:seed
+    
+- generate api doc
 
-php artisan  l5-swagger:generate
+    php artisan  l5-swagger:generate
 
 exaple api
 <p align="center"><img src="https://i.ibb.co/Qdn8Kds/swauth.png"></p>
