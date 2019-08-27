@@ -35,4 +35,4 @@ generate api doc
 php artisan  l5-swagger:generate
 
 exaple api
-<p align="center"><img src="https://ibb.co/k103S1Y"></p>
+<p align="center"><img src="https://i.ibb.co/Qdn8Kds/swauth.png"></p>
