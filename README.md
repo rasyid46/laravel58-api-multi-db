@@ -1,13 +1,13 @@
 # laravel58-api-multi-db 
 laravel 5.8 rest api using postgre and mongo <br/>
 
-composer install
+composer install <br/>
 
-php artisan key:generate
-php artisan jwt:secret 
+php artisan key:generate <br/>
+php artisan jwt:secret  <br/>
 
-- copy .env.example to .env
-  cp .env.example .env
+- copy .env.example to .env <br/>
+  cp .env.example .env <br/>
 
 set env <br/>
 
