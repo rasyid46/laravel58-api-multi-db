@@ -1,0 +1,146 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API Tukanggaji",
+        "contact": {
+            "name": "",
+            "url": "https://tukanggaji.com/"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8000/",
+    "basePath": "",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/api/v1/int/login": {
+            "post": {
+                "tags": [
+                    "auth Section"
+                ],
+                "summary": "Login",
+                "description": "login",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "email": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "example": "super@admin.com"
+                                },
+                                "password": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "example": "admin1234!"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data area."
+                    },
+                    "404": {
+                        "description": "Unauthorized action."
+                    },
+                    "401": {
+                        "description": "Token Exipred"
+                    }
+                }
+            }
+        },
+        "/api/v1/int/user": {
+            "get": {
+                "tags": [
+                    "auth Section"
+                ],
+                "summary": "Login",
+                "description": "get data user by token",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data area."
+                    },
+                    "404": {
+                        "description": "Unauthorized action."
+                    },
+                    "401": {
+                        "description": "Token Exipred"
+                    }
+                }
+            }
+        },
+        "/api/v1/int/logout": {
+            "post": {
+                "tags": [
+                    "auth Section"
+                ],
+                "summary": "Logout",
+                "description": "logout",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data area."
+                    },
+                    "404": {
+                        "description": "Unauthorized action."
+                    },
+                    "401": {
+                        "description": "Token Exipred"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Error": {
+            "required": [
+                "code",
+                "message"
+            ],
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
