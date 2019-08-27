@@ -33,3 +33,6 @@ L5_schemes=http
 generate api doc
 
 php artisan  l5-swagger:generate
+
+exaple api
+<p align="center"><img src="https://ibb.co/k103S1Y"></p>
