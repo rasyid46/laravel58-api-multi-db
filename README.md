@@ -1,4 +1,8 @@
 # laravel58-api-multi-db 
+# php 7.2
+# MongoDB server version: 3.6.3
+
+
 laravel 5.8 rest api using postgre and mongo <br/>
 
 composer install <br/>
