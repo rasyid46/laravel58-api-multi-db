@@ -15,7 +15,7 @@ class UserSeederr extends Seeder
         if(DB::connection('pgsql')->table('user')->get()->count() == 0){
 
             $insertArray =['phone' => '123', 'first_name' => 'andi','last_name' =>'rosadi','address'=>'kopo','born_place'=>'Bandung','born_date'=>'1992-07-17','npwp'=>'123'];
-            $insertid = DB::collection('muser')->insertGetId($insertArray);
+            $insertid = DB::connection('mongodb')->collection('muser')->insertGetId($insertArray);
          
         
             DB::connection('pgsql')->table('user')->insert(
